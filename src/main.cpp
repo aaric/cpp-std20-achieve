@@ -1,7 +1,9 @@
-#include <iostream>
+#include "lang.h"
 
 int main()
 {
-    std::cout << "Hello, World!" << std::endl;
+    // lang
+    main1(TYPE_LANG);
+
     return 0;
 }
