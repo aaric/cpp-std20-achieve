@@ -37,11 +37,15 @@ void helloLang()
 void typeLang()
 {
     // sizeof
-    std::cout << sizeof(short) << std::endl;
-    std::cout << sizeof(int) << std::endl;
-    std::cout << sizeof(long) << std::endl;
-    std::cout << sizeof(long long) << std::endl;
+    std::cout << "short size: " << sizeof(short) << std::endl;
+    std::cout << "int size: " << sizeof(int) << std::endl;
+    std::cout << "long size: " << sizeof(long) << std::endl;
+    std::cout << "long long size: " << sizeof(long long) << std::endl;
 
     int age = 18;
-    std::cout << sizeof(age) << std::endl;
+    std::cout << "age size: " << sizeof(age) << std::endl;
+
+    char ch1 = 'a';
+    char ch2 = 'A';
+    std::cout << "'a' = " << (int) ch1 << ", 'A' = " << (int) ch2 << std::endl;
 }
