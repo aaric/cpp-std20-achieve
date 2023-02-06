@@ -47,5 +47,13 @@ void typeLang()
 
     char ch1 = 'a';
     char ch2 = 'A';
-    std::cout << "'a' = " << (int) ch1 << ", 'A' = " << (int) ch2 << std::endl;
+    std::cout << "'a' = " << (int)ch1 << ", 'A' = " << (int)ch2 << std::endl;
+    std::cout << "a\thello world" << std::endl;
+    std::cout << "aa\thello world" << std::endl;
+    std::cout << "aaa\thello world" << std::endl;
+
+    char str1[] = "hello world";
+    std::string str2 = "hello world";
+    std::cout << str1 << std::endl;
+    std::cout << str2 << std::endl;
 }
