@@ -9,6 +9,7 @@ enum Fun
 {
     HELLO_LANG,
     TYPE_LANG,
+    OPERATOR_LANG
 };
 
 int main1(Fun fun);
@@ -16,5 +17,7 @@ int main1(Fun fun);
 void helloLang();
 
 void typeLang();
+
+void operatorLang();
 
 #endif // CPP_STD20_ACHIEVE_LANG_H

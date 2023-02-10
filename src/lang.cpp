@@ -5,6 +5,8 @@
 #include "lang.h"
 #include <iostream>
 
+using namespace std;
+
 int main1(Fun fun)
 {
     switch (fun)
@@ -17,8 +19,12 @@ int main1(Fun fun)
         // 2. types
         typeLang();
         break;
+    case OPERATOR_LANG:
+        // operator
+        operatorLang();
+        break;
     default:
-        std::cout << "No Fun!" << std::endl;
+        cout << "No Fun!" << endl;
     }
 }
 
@@ -28,7 +34,7 @@ int main1(Fun fun)
 void helloLang()
 {
     // print
-    std::cout << "Hello, C++20!" << std::endl;
+    cout << "Hello, C++20!" << endl;
 }
 
 /**
@@ -37,23 +43,43 @@ void helloLang()
 void typeLang()
 {
     // sizeof
-    std::cout << "short size: " << sizeof(short) << std::endl;
-    std::cout << "int size: " << sizeof(int) << std::endl;
-    std::cout << "long size: " << sizeof(long) << std::endl;
-    std::cout << "long long size: " << sizeof(long long) << std::endl;
+    cout << "short size: " << sizeof(short) << endl;
+    cout << "int size: " << sizeof(int) << endl;
+    cout << "long size: " << sizeof(long) << endl;
+    cout << "long long size: " << sizeof(long long) << endl;
 
     int age = 18;
-    std::cout << "age size: " << sizeof(age) << std::endl;
+    cout << "age size: " << sizeof(age) << endl;
 
     char ch1 = 'a';
     char ch2 = 'A';
-    std::cout << "'a' = " << (int)ch1 << ", 'A' = " << (int)ch2 << std::endl;
-    std::cout << "a\thello world" << std::endl;
-    std::cout << "aa\thello world" << std::endl;
-    std::cout << "aaa\thello world" << std::endl;
+    cout << "'a' = " << (int)ch1 << ", 'A' = " << (int)ch2 << endl;
+    cout << "a\thello world" << endl;
+    cout << "aa\thello world" << endl;
+    cout << "aaa\thello world" << endl;
 
     char str1[] = "hello world";
-    std::string str2 = "hello world";
-    std::cout << str1 << std::endl;
-    std::cout << str2 << std::endl;
+    string str2 = "hello world";
+    cout << str1 << endl;
+    cout << str2 << endl;
+
+    bool flag = true;
+    cout << "true=" << flag << ", false:=" << !flag << endl;
+
+    // int, double, char, str,
+    string input;
+    cout << "input string:" << endl;
+    cin >> input;
+    cout << "input=" << input << endl;
+}
+
+/**
+ * operator Lang: math, logic...
+ */
+void operatorLang()
+{
+    int a = 10;
+    int b1 = ++a * 10;
+    int b2 = a++ * 10;
+    cout << "b1=" << b1 << ", b2=" << b2 << endl;
 }

@@ -3,7 +3,7 @@
 int main()
 {
     // lang
-    main1(TYPE_LANG);
+    main1(OPERATOR_LANG);
 
     return 0;
 }
