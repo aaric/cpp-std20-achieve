@@ -64,7 +64,7 @@ void typeLang()
     cout << str2 << endl;
 
     bool flag = true;
-    cout << "true=" << flag << ", false:=" << !flag << endl;
+    cout << "true=" << flag << ", false=" << !flag << endl;
 
     // int, double, char, str,
     string input;
@@ -79,7 +79,15 @@ void typeLang()
 void operatorLang()
 {
     int a = 10;
+    int b = 5;
+    cout << "a + b = " << a + b << endl;
+
     int b1 = ++a * 10;
     int b2 = a++ * 10;
     cout << "b1=" << b1 << ", b2=" << b2 << endl;
+
+    cout << "a > b = " << (a > b) << endl;
+
+    cout << "!a = " << !a << endl;
+    cout << "!!a = " << !!a << endl;
 }
