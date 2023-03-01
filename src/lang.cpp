@@ -4,6 +4,8 @@
 
 #include "lang.h"
 
+#include <fcntl.h>
+
 #include <iostream>
 #include <limits>
 
@@ -70,11 +72,15 @@ void typeLang() {
   // cin >> input;
   cout << "input=" << input << endl;
 
+  // wchar_t
+  // wcout.imbue(locale("chs")); -- failure
+  _setmode(_fileno(stdin), _O_U16TEXT);
+  _setmode(_fileno(stdout), _O_U16TEXT);
   wchar_t ch = L'中';
-  wcout << endl;
   wcout << "ch=" << ch;
-  cout << ", max=" << numeric_limits<int>::max();
-  cout << ", min=" << numeric_limits<int>::min() << endl;
+  wcout << ", max=" << numeric_limits<wchar_t>::max();
+  wcout << ", min=" << numeric_limits<wchar_t>::min();
+  cout << ", size=" << sizeof(wchar_t) << endl;
   wcout << "china=" << L"中国" << endl;
 }
 
