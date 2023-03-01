@@ -5,6 +5,7 @@
 #include "lang.h"
 
 #include <iostream>
+#include <limits>
 
 using namespace std;
 
@@ -66,8 +67,15 @@ void typeLang() {
   // int, double, char, str,
   string input;
   cout << "input string:" << endl;
-  cin >> input;
+  // cin >> input;
   cout << "input=" << input << endl;
+
+  wchar_t ch = L'中';
+  wcout << endl;
+  wcout << "ch=" << ch;
+  cout << ", max=" << numeric_limits<int>::max();
+  cout << ", min=" << numeric_limits<int>::min() << endl;
+  wcout << "china=" << L"中国" << endl;
 }
 
 /**
