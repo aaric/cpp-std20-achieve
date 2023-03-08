@@ -38,6 +38,8 @@ void helloLang() {
   cout << "Hello, C++20!" << endl;
 }
 
+#define NEWLINE '\n'
+
 /**
  * Type Lang: The support types.
  */
@@ -69,8 +71,12 @@ void typeLang() {
   // int, double, char, str,
   string input;
   cout << "input string:" << endl;
-  // cin >> input;
+  cin >> input;
   cout << "input=" << input << endl;
+
+  // const
+  const int WIDTH = 400, HEIGHT = 300;
+  cout << WIDTH * HEIGHT << NEWLINE;
 
   // wchar_t
   // wcout.imbue(locale("chs")); -- failure
