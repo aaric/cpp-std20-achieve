@@ -78,6 +78,20 @@ void typeLang() {
   const int WIDTH = 400, HEIGHT = 300;
   cout << WIDTH * HEIGHT << NEWLINE;
 
+  // unsigned
+  unsigned short u1 = 100;
+  unsigned int u2 = 100;
+  unsigned long u3 = 100;
+  unsigned long long u4 = 100;
+  cout << "u1=" << sizeof(u1) << endl;
+  cout << "u2=" << sizeof(u2) << endl;
+  cout << "u3=" << sizeof(u3) << endl;
+  cout << "u4=" << sizeof(u4) << endl;
+
+  // volatile
+  volatile int v1 = 100;
+  cout << "v1=" << v1 << endl;
+
   // wchar_t
   // wcout.imbue(locale("chs")); -- failure
   _setmode(_fileno(stdin), _O_U16TEXT);
