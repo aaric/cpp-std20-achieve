@@ -35,6 +35,7 @@ int main1(Fun fun) {
  */
 void helloLang() {
   // print
+  cout << __cplusplus << endl;
   cout << "Hello, C++20!" << endl;
 }
 

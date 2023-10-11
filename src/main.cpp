@@ -2,7 +2,7 @@
 
 int main() {
   // lang
-  main1(TYPE_LANG);
+  main1(HELLO_LANG);
 
   return 0;
 }
