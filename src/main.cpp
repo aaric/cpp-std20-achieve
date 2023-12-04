@@ -2,7 +2,7 @@
 
 int main() {
   // lang
-  main1(STRING_LANG);
+  main1(TYPE_LANG);
 
   return 0;
 }
