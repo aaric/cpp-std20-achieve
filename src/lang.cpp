@@ -114,6 +114,21 @@ void typeLang() {
     std::cout << typeid(d1).name() << std::endl;
     std::cout << typeid(i1 + d1).name() << std::endl;
     std::cout << typeid(int).name() << std::endl;
+
+    // decltype
+    const int&& main1();
+    struct Num {
+        double d1;
+    };
+    const Num* n = new Num();
+    decltype(main1) main2;
+    std::cout << typeid(main2).name() << std::endl;
+    decltype(i2) i3;
+    std::cout << typeid(i3).name() << std::endl;
+    decltype(n->d1) nd1;
+    std::cout << typeid(nd1).name() << std::endl;
+    decltype((n->d1)) nd2 = 0;
+    std::cout << typeid(nd2).name() << std::endl;
 }
 
 /**
