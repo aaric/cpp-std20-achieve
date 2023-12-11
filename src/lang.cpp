@@ -43,6 +43,12 @@ void helloLang() {
 
 #define NEWLINE '\n'
 
+template<class T1, class T2>
+auto sum(T1 t1, T2 t2) -> decltype( t1 + t2)
+{
+    return t1 + t1;
+}
+
 /**
  * Type Lang: The support types.
  */
@@ -129,6 +135,7 @@ void typeLang() {
     std::cout << typeid(nd1).name() << std::endl;
     decltype((n->d1)) nd2 = 0;
     std::cout << typeid(nd2).name() << std::endl;
+    std::cout << sum(1, 2) << std::endl;
 }
 
 /**
